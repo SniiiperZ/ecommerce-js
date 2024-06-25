@@ -1,6 +1,6 @@
 import produits from "../../storage/produits.json";
 import { CategorieBadge } from "./Partials/CategorieBadge";
-import { addToCart } from "../../storage/cart";
+import { addToCart } from "../../storage/Cart";
 
 /**
  * Page des détails d'un produit
@@ -53,6 +53,6 @@ export const Produit = (element) => {
     confirmationMessage.style.display = "block";
     setTimeout(() => {
       confirmationMessage.style.display = "none";
-    }, 3000);
+    }, 3000); // Masquer après 3 secondes
   });
 };
