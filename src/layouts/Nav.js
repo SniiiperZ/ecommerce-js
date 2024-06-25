@@ -11,7 +11,7 @@ import { ROUTE_CHANGED_EVENT } from "../framework/app";
  * @returns {void}
  */
 export const Nav = (element) => {
-  const appName = "Une App";
+  const appName = "BootCamp";
 
   /**
    * @type {Link[]}
@@ -42,13 +42,16 @@ export const Nav = (element) => {
               .join("")}
           </ul>
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary btn-sm" href="/cart">
-                <i class="ri-shopping-cart-line"></i>
-                <span id="cart-count" class="badge bg-danger">0</span>
-              </a>
-            </li>
-          </ul>
+  <li class="nav-item">
+    <a class="nav-link btn btn-primary btn-sm" href="/cart">
+      <span>
+        <i class="ri-shopping-cart-line"></i>
+        <span id="cart-count" class="badge bg-danger">0</span>
+      </span>
+    </a>
+  </li>
+</ul>
+
         </div>
       </div>
     </nav>
@@ -62,7 +65,7 @@ export const Nav = (element) => {
       // Empêche la navigation par défaut
       event.preventDefault();
       // Modifie l'URL de la page sans recharger la page
-      window.history.pushState({}, "", event.target.href);
+      window.history.pushState({}, "", event.currentTarget.href);
       // Déclenche l'événement route-changed pour changer de page sans recharger la page
       element.dispatchEvent(new CustomEvent(ROUTE_CHANGED_EVENT));
 
