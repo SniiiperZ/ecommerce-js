@@ -35,10 +35,6 @@ export const Carousel = (images) => {
             <img src="${image.src}" class="d-block w-100" alt="${
               image.description
             }">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>${image.title}</h5>
-              <p>${image.description}</p>
-            </div>
           </div>
         `
           )
