@@ -1,6 +1,6 @@
 import produits from "../../storage/produits.json";
 import { CategorieBadge } from "./Partials/CategorieBadge";
-import { addToCart } from "../../storage/Cart";
+import { addToCart } from "../../storage/cart";
 
 /**
  * Page des détails d'un produit
@@ -20,7 +20,7 @@ export const Produit = (element) => {
     element.innerHTML = `
       <h1>Produit non trouvé</h1>
       <p>L'produit avec l'identifiant ${produitId} n'existe pas.</p>
-      `;
+    `;
     return;
   }
 
@@ -41,10 +41,18 @@ export const Produit = (element) => {
       <input type="number" id="quantity" name="quantity" min="1" value="1">
       <button id="add-to-cart-btn" class="btn btn-primary">Ajouter au panier</button>
     </div>
+    <div id="confirmation-message" class="alert alert-success" style="display: none;" role="alert">
+      Bingo c'est dans le panier !
+    </div>
   `;
 
   document.getElementById("add-to-cart-btn").addEventListener("click", () => {
     const quantity = parseInt(document.getElementById("quantity").value);
     addToCart(produit, quantity);
+    const confirmationMessage = document.getElementById("confirmation-message");
+    confirmationMessage.style.display = "block";
+    setTimeout(() => {
+      confirmationMessage.style.display = "none";
+    }, 3000);
   });
 };
