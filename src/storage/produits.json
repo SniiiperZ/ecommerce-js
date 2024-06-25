@@ -101,8 +101,8 @@
   {
     "id": 12,
     "name": "Chaise de camping",
-    "marque": "Decathlon",
-    "image": "./images/chaise-camping.webp",
+    "marque": "CampalAir",
+    "image": "./images/chaise-camping.jpg",
     "description": "Chaise de camping pliante en aluminium, idéale pour s'asseoir et se détendre. Elle est très légère et facile à transporter.",
     "categorie": "mobilier",
     "prix": 35.99
