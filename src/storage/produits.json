@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "name": "Couteau futuriste",
+    "marque": "FuturTech",
+    "image": "./images/couteau-futur.jpeg",
+    "description": "Couteau futuriste en acier inoxydable, idéal pour couper les légumes, les fruits et la viande. Il est très tranchant.",
+    "categorie": "outil",
+    "prix": 59.99
+  },
+  {
+    "id": 2,
+    "name": "Lampe torche futuriste",
+    "marque": "FuturTech",
+    "image": "./images/lampe-torche.jpg",
+    "description": "Puissante lampe torche futuriste en acier, idéale pour éblouir tes voisins et les embêter.",
+    "categorie": "securite",
+    "prix": 47.99
+  },
+  {
+    "id": 3,
+    "name": "Tente futuriste",
+    "marque": "FuturTech",
+    "image": "./images/tente-futur.jpg",
+    "description": "Tente futuriste en polyester, idéale pour camper en pleine nature. Elle est très résistante et facile à monter.",
+    "categorie": "abri",
+    "prix": 229.99
+  },
+  {
+    "id": 4,
+    "name": "Table futuriste",
+    "marque": "FuturTech",
+    "image": "./images/table-futur.jpg",
+    "description": "Table futuriste en verre, idéale pour manger et travailler. Elle est très solide et facile à nettoyer.",
+    "categorie": "mobilier",
+    "prix": 469.99
+  },
+  {
+    "id": 5,
+    "name": "Boussole futuriste",
+    "marque": "FuturTech",
+    "image": "./images/boussole-futur.jpeg",
+    "description": "Boussole futuriste en plastique, idéale pour s'orienter en pleine nature. Elle est très précise et facile à utiliser.",
+    "categorie": "outil",
+    "prix": 69.99
+  },
+  {
+    "id": 6,
+    "name": "Jumelles futuristes",
+    "marque": "FuturTech",
+    "image": "./images/jumelle-futur.jpg",
+    "description": "Jumelles futuristes en acier, idéale pour observer la galaxie.",
+    "categorie": "loisir",
+    "prix": 199.99
+  },
+  {
+    "id": 7,
+    "name": "Sifflet futuriste",
+    "marque": "FuturTech",
+    "image": "./images/sifflet-futur.jpg",
+    "description": "Sifflet futuriste en plastique, idéal pour appeler les animaux et les personnes. Il est très léger et facile à utiliser.",
+    "categorie": "securite",
+    "prix": 44.99
+  },
+  {
+    "id": 8,
+    "name": "Tente medievale",
+    "marque": "MedievalTech",
+    "image": "./images/tente-medieval.jpg",
+    "description": "Tente medievale en toile, idéale pour s'introduire discrètement chez les vikings. Très résistante mais difficile à monter.",
+    "categorie": "abri",
+    "prix": 339.99
+  },
+  {
+    "id": 9,
+    "name": "Freesbee futuriste",
+    "marque": "FuturTech",
+    "image": "./images/freesbee-futur.jpg",
+    "description": "Freesbee futuriste en plastique, idéale pour jouer en plein air. Il est très léger mais facile à lancer.",
+    "categorie": "loisir",
+    "prix": 55.99
+  },
+  {
+    "id": 10,
+    "name": "Moustiquaire futuriste",
+    "marque": "FuturTech",
+    "image": "./images/moustiquaire.jpg",
+    "description": "Moustiquaire futuriste en polyester, idéale pour se protéger des moustiques. Très résistante et facile à installer.",
+    "categorie": "securite",
+    "prix": 85.99
+  },
+  {
+    "id": 11,
+    "name": "Paracorde",
+    "marque": "CampalAir",
+    "image": "./images/paracorde.jpeg",
+    "description": "Paracorde en nylon, idéale pour attacher les objets et les bagages. Elle est très résistante et facile à utiliser.",
+    "categorie": "outil",
+    "prix": 19.99
+  },
+  {
+    "id": 12,
+    "name": "Chaise de camping",
+    "marque": "Decathlon",
+    "image": "./images/chaise-camping.webp",
+    "description": "Chaise de camping pliante en aluminium, idéale pour s'asseoir et se détendre. Elle est très légère et facile à transporter.",
+    "categorie": "mobilier",
+    "prix": 35.99
+  },
+  {
+    "id": 13,
+    "name": "Tente de camping",
+    "marque": "CampalAir",
+    "image": "./images/tente-camping.jpg",
+    "description": "Tente de camping simple en polyester, idéale pour camper en pleine nature. Elle est très résistante et facile à monter.",
+    "categorie": "abri",
+    "prix": 109.99
+  },
+  {
+    "id": 14,
+    "name": "Couteau multifonction",
+    "marque": "CampalAir",
+    "image": "./images/couteau-multi.jpeg",
+    "description": "Couteau multifonction en acier inoxydable, idéal pour faire du camping et de la randonnée.",
+    "categorie": "outil",
+    "prix": 51.99
+  },
+  {
+    "id": 15,
+    "name": "Canne à pêche futuriste",
+    "marque": "FuturTech",
+    "image": "./images/canne-futur.jpg",
+    "description": "Canne à pêche futuriste en fibre de carbone, idéale pour pêcher en mer et en rivière. Elle est très légère et facile à utiliser.",
+    "categorie": "loisir",
+    "prix": 149.99
+  },
+  {
+    "id": 16,
+    "name": "Appareil photo futuriste",
+    "marque": "FuturTech",
+    "image": "./images/appareil-futur.jpg",
+    "description": "Appareil photo futuriste en plastique, idéal pour prendre des photos et des vidéos. Il est très léger et facile à utiliser.",
+    "categorie": "loisir",
+    "prix": 219.99
+  },
+  {
+    "id": 17,
+    "name": "Tente basique",
+    "marque": "CampalAir",
+    "image": "./images/tente-basic.jpg",
+    "description": "Tente basique en polyester, idéale pour camper en pleine nature. Elle est très résistante et facile à monter.",
+    "categorie": "abri",
+    "prix": 49.99
+  },
+  {
+    "id": 18,
+    "name": "Hamac futuriste",
+    "marque": "FuturTech",
+    "image": "./images/hamac-futur.jpg",
+    "description": "Hamac futuriste en nylon, idéal pour se détendre en plein air. Il est très résistant et facile à installer.",
+    "categorie": "mobilier",
+    "prix": 159.99
+  },
+  {
+    "id": 19,
+    "name": "Kit de réparation",
+    "marque": "CampalAir",
+    "image": "./images/kit-reparation.jpeg",
+    "description": "Kit de réparation pour tente, idéal pour réparer les déchirures et les trous. Il est très pratique et facile à utiliser.",
+    "categorie": "outil",
+    "prix": 89.99
+  },
+  {
+    "id": 20,
+    "name": "Lit futuriste",
+    "marque": "FuturTech",
+    "image": "./images/lit-futur.jpg",
+    "description": "Lit futuriste en métal, idéal pour dormir et se reposer. Il est très confortable et facile à monter.",
+    "categorie": "mobilier",
+    "prix": 449.99
+  },
+  {
+    "id": 21,
+    "name": "Mongolfière futuriste",
+    "marque": "FuturTech",
+    "image": "./images/mongolfiere-futur.jpg",
+    "description": "Mongolfière futuriste en nylon, idéale pour voler dans les airs. Elle est très résistante et facile à piloter.",
+    "categorie": "loisir",
+    "prix": 699.99
+  },
+  {
+    "id": 22,
+    "name": "Filet de pêche futuriste",
+    "marque": "FuturTech",
+    "image": "./images/filet.jpg",
+    "description": "Filet de pêche futuriste en nylon, idéal pour attraper les poissons. Il est très résistant et facile à utiliser.",
+    "categorie": "securite",
+    "prix": 209.99
+  },
+  {
+    "id": 23,
+    "name": "Tente de cirque",
+    "marque": "CampalAir",
+    "image": "./images/tente-cirque.jpg",
+    "description": "Tente de cirque en polyester, idéale pour camper en pleine nature. Elle est très résistante et facile à monter.",
+    "categorie": "abri",
+    "prix": 649.99
+  },
+  {
+    "id": 24,
+    "name": "l'Anti bêtes futuriste",
+    "marque": "FuturTech",
+    "image": "./images/repulsif-insecte.jpg",
+    "description": "Répulsif à insectes futuriste en plastique, idéal pour éloigner tout types d'insectes.",
+    "categorie": "securite",
+    "prix": 129.99
+  },
+  {
+    "id": 25,
+    "name": "Chaise futuriste",
+    "marque": "FuturTech",
+    "image": "./images/chaise-futur.jpg",
+    "description": "Chaise futuriste en plastique, idéale pour s'asseoir et se détendre. Elle est très confortable et facile à nettoyer.",
+    "categorie": "mobilier",
+    "prix": 79.99
+  }
+]

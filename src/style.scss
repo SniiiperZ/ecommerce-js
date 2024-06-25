@@ -1,0 +1,31 @@
+@import "bootstrap/scss/bootstrap";
+body * {
+  text-decoration: none !important;
+}
+
+#app {
+  margin-top: 30px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.ri-shopping-cart-line {
+  color: red;
+}
+#grid-mode-btn,
+#table-mode-btn {
+  background-color: grey;
+  margin: 10px;
+}
+#grid-mode-btn.active,
+#table-mode-btn.active {
+  background-color: black;
+}
+.card-space {
+  display: flex;
+  justify-content: space-between;
+}

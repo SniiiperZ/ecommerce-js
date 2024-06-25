@@ -1,0 +1,17 @@
+[
+  {
+    "src": "/backgrounds/1.webp",
+    "title": "First slide label",
+    "description": "Some representative placeholder content for the first slide."
+  },
+  {
+    "src": "/backgrounds/2.webp",
+    "title": "Second slide label",
+    "description": "Some representative placeholder content for the second slide."
+  },
+  {
+    "src": "/backgrounds/3.webp",
+    "title": "Third slide label",
+    "description": "Some representative placeholder content for the third slide."
+  }
+]
