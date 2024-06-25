@@ -10,7 +10,7 @@ import images from "../storage/homepageCarousel.json";
 export const Home = (element) => {
   element.innerHTML = `
     <h1>Accueil</h1>
-    <p>Bienvenue sur une app !</p>
+    <p>Bienvenue chez BootCamp !</p>
     ${Carousel(images)}
     `;
 };
