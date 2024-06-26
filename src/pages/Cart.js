@@ -84,7 +84,7 @@ export const Cart = (element) => {
       const quantity = parseInt(event.target.value);
       updateProductQuantity(productId, quantity); // Mettre à jour la quantité du produit dans le panier
       updateCartCount(); // Mettre à jour le compteur de panier
-      Cart(element); // Re-render the cart
+      Cart(element); // Mettre à jour l'affichage du panier
     });
   });
 
@@ -94,7 +94,7 @@ export const Cart = (element) => {
       const productId = parseInt(event.target.getAttribute("data-id"));
       removeProductFromCart(productId); // Supprimer le produit du panier
       updateCartCount(); // Mettre à jour le compteur de panier
-      Cart(element); // Re-render the cart
+      Cart(element); // Mettre à jour l'affichage du panier
     });
   });
 
@@ -102,7 +102,7 @@ export const Cart = (element) => {
   document.getElementById("clear-cart-btn").addEventListener("click", () => {
     clearCart(); // Vide le panier
     updateCartCount(); // Mettre à jour le compteur de panier
-    Cart(element); // Re-render the cart
+    Cart(element); // Mettre à jour l'affichage du panier
   });
 
   // Ajout d'un écouteur d'événement pour le bouton "Commander"
@@ -110,6 +110,6 @@ export const Cart = (element) => {
     alert("Commande simulée avec succès !");
     clearCart(); // Vide le panier après la commande
     updateCartCount(); // Mettre à jour le compteur de panier
-    Cart(element); //
+    Cart(element); // Mettre à jour l'affichage du panier
   });
 };
