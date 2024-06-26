@@ -2,7 +2,9 @@
 body * {
   text-decoration: none !important;
 }
-
+body {
+  background-color: bisque;
+}
 #app {
   margin-top: 30px;
 }
@@ -14,7 +16,7 @@ header {
   z-index: 99;
 }
 .ri-shopping-cart-line {
-  color: red;
+  color: black;
 }
 #grid-mode-btn,
 #table-mode-btn {

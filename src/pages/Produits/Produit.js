@@ -53,6 +53,6 @@ export const Produit = (element) => {
     confirmationMessage.style.display = "block";
     setTimeout(() => {
       confirmationMessage.style.display = "none";
-    }, 3000); // Masquer après 3 secondes
+    }, 3000);
   });
 };

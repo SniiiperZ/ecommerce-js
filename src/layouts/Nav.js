@@ -42,16 +42,15 @@ export const Nav = (element) => {
               .join("")}
           </ul>
           <ul class="navbar-nav">
-  <li class="nav-item">
-    <a class="nav-link btn btn-primary btn-sm" href="/cart">
-      <span>
-        <i class="ri-shopping-cart-line"></i>
-        <span id="cart-count" class="badge bg-danger">0</span>
-      </span>
-    </a>
-  </li>
-</ul>
-
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary btn-sm" href="/cart">
+                <span>
+                  <i class="ri-shopping-cart-line"></i>
+                  <span id="cart-count" class="badge bg-danger">0</span>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
