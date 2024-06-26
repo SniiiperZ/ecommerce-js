@@ -31,10 +31,6 @@ export const Produit = (element) => {
   // Si le produit existe, afficher ses détails
   element.innerHTML = `
     <h1>${produit.name}</h1>
-    ${CategorieBadge(
-      produit.categorie
-    )} <!-- Affichage du badge de la catégorie du produit -->
-    <br>
     <figure>
       <img src="${produit.image}" alt="${
     produit.name
@@ -42,7 +38,9 @@ export const Produit = (element) => {
     </figure>
     <p>${produit.description}</p>
     <p>${produit.marque}&nbsp&nbsp&nbsp${produit.prix}€</p>
-    
+    ${CategorieBadge(
+      produit.categorie
+    )} <!-- Affichage du badge de la catégorie du produit -->
     <div>
       <label for="quantity">Quantité</label>
       <input type="number" id="quantity" name="quantity" min="1" value="1">
