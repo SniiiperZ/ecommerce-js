@@ -1,3 +1,4 @@
+// Importation des composants nécessaires
 import { Carousel } from "../components/Carousel";
 import images from "../storage/homepageCarousel.json";
 

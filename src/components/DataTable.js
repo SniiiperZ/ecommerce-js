@@ -1,3 +1,4 @@
+// Importation des constantes et des composants nécessaires
 import { ROUTE_CHANGED_EVENT } from "../framework/app";
 import { Pagination } from "./Pagination";
 import { TextInput } from "./TextInput";
@@ -5,11 +6,11 @@ import { TextInput } from "./TextInput";
 /**
  * Un composant pour afficher un tableau paginé et filtrable.
  *
- * @param {HTMLElement} element
- * @param {Object[]} items
- * @param {Function} itemTemplate
- * @param {string[]} searchableFields
- * @param {string[]} tableHeadings
+ * @param {HTMLElement} element - L'élément HTML où le tableau sera rendu
+ * @param {Object[]} items - La liste des éléments à afficher
+ * @param {Function} itemTemplate - La fonction de template pour chaque ligne du tableau
+ * @param {string[]} searchableFields - Les champs des objets qui peuvent être recherchés
+ * @param {string[]} tableHeadings - Les en-têtes des colonnes du tableau
  * @returns {void}
  */
 export const DataTable = (
@@ -19,14 +20,17 @@ export const DataTable = (
   searchableFields,
   tableHeadings
 ) => {
+  // Initialisation de la page courante et de la valeur de recherche à partir de l'URL
   let currentPage =
     parseInt(new URL(window.location).searchParams.get("page")) || 1;
   let searchInputValue =
     new URL(window.location).searchParams.get("search") || "";
   let filteredItems = items;
 
+  // Génération d'un identifiant unique pour le tableau
   const id = `table-${Math.random().toString(36).slice(2)}`;
 
+  // Définition de la structure HTML du composant
   element.innerHTML = `
     <div class="row">
       <div class="col mb-2">
@@ -49,10 +53,12 @@ export const DataTable = (
     <div id="pagination"></div>
     `;
 
+  // Récupération des éléments du DOM pour la recherche, la liste et la pagination
   const searchInput = element.querySelector("input#search");
   const listElement = element.querySelector(`#${id} tbody`);
   const paginationElement = element.querySelector("#pagination");
 
+  // Fonction pour rendre la liste des éléments filtrés
   const renderList = (filteredItems) => {
     if (filteredItems.length === 0) {
       return `
@@ -65,6 +71,7 @@ export const DataTable = (
     `;
   };
 
+  // Fonction pour filtrer et paginer les éléments
   const filterAndPaginate = (perPage = 5) => {
     const value = searchInputValue.toLowerCase();
     if (value !== "") {
@@ -86,6 +93,7 @@ export const DataTable = (
     listElement.innerHTML = renderList(filteredItems);
     paginationElement.innerHTML = Pagination(currentPage, pages);
 
+    // Ajout des écouteurs d'événements pour les liens de pagination
     const paginationLinks = paginationElement.querySelectorAll("a");
     const paginationLinkClickHandler = (event) => {
       event.preventDefault();
@@ -101,6 +109,7 @@ export const DataTable = (
       paginationLinks[i].addEventListener("click", paginationLinkClickHandler);
     }
 
+    // Ajout des écouteurs d'événements pour les liens des lignes du tableau
     const rowsLinks = listElement.querySelectorAll("a");
     const rowLinkClickHandler = (event) => {
       event.preventDefault();
@@ -113,8 +122,10 @@ export const DataTable = (
     }
   };
 
+  // Initialisation du filtrage et de la pagination
   filterAndPaginate();
 
+  // Ajout d'un écouteur d'événement pour la saisie dans le champ de recherche
   searchInput.addEventListener("input", (e) => {
     e.preventDefault();
     searchInputValue = e.target.value;
@@ -126,6 +137,7 @@ export const DataTable = (
     filterAndPaginate();
   });
 
+  // Ajout d'un écouteur d'événement pour la navigation dans l'historique
   window.addEventListener("popstate", () => {
     currentPage =
       parseInt(new URL(window.location).searchParams.get("page")) || 1;

@@ -1,3 +1,4 @@
+// Importation des composants nécessaires
 import { CardsList } from "../../components/CardsList";
 import { DataTable } from "../../components/DataTable";
 import produits from "../../storage/produits.json";
@@ -8,15 +9,16 @@ import { ProduitRow } from "./Partials/ProduitRow";
  * Page de la liste des produits
  * 2 modes d'affichage : grille et tableau
  *
- * @param {HTMLElement} element
+ * @param {HTMLElement} element - L'élément HTML où le contenu de la page produit sera rendu
  * @returns {void}
  */
 export const Produits = (element) => {
-  // on récupère le mode d'affichage depuis l'URL
+  // Récupération du mode d'affichage depuis l'URL
   const url = new URL(window.location.href);
   const modeFromQueryString = url.searchParams.get("mode");
-  let mode = modeFromQueryString || "grid";
+  let mode = modeFromQueryString || "grid"; // Mode d'affichage par défaut : grille
 
+  // Définition de la structure HTML de la page
   element.innerHTML = `
     <div class="d-flex justify-content-between">
       <h1>Produits</h1>
@@ -45,7 +47,7 @@ export const Produits = (element) => {
   // Fonction pour filtrer les produits par catégorie
   const filterProduitsByCategory = (category) => {
     if (category === "") {
-      return produits; // Si aucune catégorie sélectionnée, retourne tous les produits
+      return produits; // Si aucune catégorie sélectionnée, retourner tous les produits
     }
     return produits.filter((produit) => produit.categorie === category);
   };
@@ -56,29 +58,31 @@ export const Produits = (element) => {
     const filteredProduits = filterProduitsByCategory(selectedCategory);
 
     if (mode === "grid") {
+      // Affichage en mode grille
       CardsList(produitsList, filteredProduits, ProduitCard, [
         "name",
-        "description",
+        "categorie",
       ]);
     } else if (mode === "table") {
+      // Affichage en mode tableau
       DataTable(
         produitsList,
         filteredProduits,
         ProduitRow,
-        ["name", "description"],
+        ["name", "categorie"],
         ["Nom", "Description", "Prix", "Categorie", "Actions"]
       );
     }
   };
 
-  // Met à jour le mode dans l'URL
+  // Mise à jour du mode dans l'URL
   const putModeInQueryString = () => {
     const url = new URL(window.location.href);
     url.searchParams.set("mode", mode);
     window.history.pushState({}, "", url);
   };
 
-  // Met en surbrillance le mode d'affichage actif
+  // Mise en surbrillance du mode d'affichage actif
   const markActiveMode = () => {
     if (mode === "grid") {
       tableModeBtn.classList.remove("active");
@@ -92,6 +96,7 @@ export const Produits = (element) => {
   // Initialisation de la page
   render();
 
+  // Récupération des éléments du DOM pour les boutons de mode d'affichage et le filtre de catégorie
   const gridModeBtn = document.querySelector("#grid-mode-btn");
   const tableModeBtn = document.querySelector("#table-mode-btn");
   const categoryFilter = document.querySelector("#category-filter");
@@ -106,7 +111,6 @@ export const Produits = (element) => {
     render();
   });
 
-  // Ajout des écouteurs d'événements sur les boutons de mode d'affichage
   tableModeBtn.addEventListener("click", () => {
     mode = "table";
     markActiveMode();

@@ -20,7 +20,7 @@ export const Nav = (element) => {
     { href: "/", text: "Accueil" },
     { href: "/contact", text: "Contact" },
     { href: "/produits", text: "Produits" },
-    { href: "/cart", text: "Panier" }, // Ajout du lien vers le panier
+    { href: "/cart", text: "Panier" },
   ];
 
   element.innerHTML = `
